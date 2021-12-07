@@ -109,3 +109,8 @@ const voters = [
 ];
 
 console.log(totalVotes(voters)); // 7
+
+//Using filter
+const totalVotes2 = (array) => array.filter((el) => el.voted).length;
+
+console.log(totalVotes2(voters));
